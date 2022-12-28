@@ -3,21 +3,25 @@ package com.dacoding.stockmarketapp.presentation.ui.theme
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
-import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 
 private val DarkColorPalette = darkColors(
-    primary = Purple200,
-    primaryVariant = Purple700,
-    secondary = Teal200
+    primary = Color.Cyan,
+    background = DarkBlue,
+    onPrimary = Color.DarkGray,
+    onBackground = TextWhite
 )
 
-private val LightColorPalette = lightColors(
+    /*
+    private val LightColorPalette = lightColors(
     primary = Purple500,
     primaryVariant = Purple700,
     secondary = Teal200
+    */
 
-    /* Other default colors to override
+    /*
+    Other default colors to override
     background = Color.White,
     surface = Color.White,
     onPrimary = Color.White,
@@ -25,7 +29,7 @@ private val LightColorPalette = lightColors(
     onBackground = Color.Black,
     onSurface = Color.Black,
     */
-)
+// )
 
 @Composable
 fun StockMarketAppTheme(
@@ -35,7 +39,8 @@ fun StockMarketAppTheme(
     val colors = if (darkTheme) {
         DarkColorPalette
     } else {
-        LightColorPalette
+        // Only Dark theme
+        DarkColorPalette
     }
 
     MaterialTheme(

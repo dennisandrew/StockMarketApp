@@ -1,6 +1,6 @@
-# StockMarketApp
+# :chart_with_upwards_trend: Stock Market App
 Simple Stock Market application implemented in Clean Architecture using Retrofit2, Room Database, Compose Destinations, Dagger-Hilt, Open CSV.
-<h1 align="center"> Stock Market App  </h1>
+<h1 align="center"> :iphone: Preview  </h1>
 
 <h4 align="center">
 The UI is implemented using Jetpack Compose and allows you to monitor the stocks of companies with a detailed description 
@@ -15,11 +15,11 @@ width="32%"/>
 width="32%"/>
 </p>
 
-##  API Alphavantage.co
+##  :arrow_right_hook: API Alphavantage.co
 
 [Click](https://www.alphavantage.co/documentation/) for API documentation.
 
-##  Libraries
+##  :link: Libraries
 
 - [Retrofit2](https://square.github.io/retrofit/)
 - [Room Database](https://developer.android.com/jetpack/androidx/releases/room)
@@ -28,6 +28,6 @@ width="32%"/>
 - [Dagger-Hilt](https://developer.android.com/training/dependency-injection/hilt-android)
 
 
-##  References
+##  :thumbsup: References
 
 - [YouTube Tutorial by Philipp Lackner](https://www.youtube.com/watch?v=uLs2FxFSWU4)

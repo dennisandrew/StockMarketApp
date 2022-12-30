@@ -20,12 +20,12 @@ class IntradayInfoParser @Inject constructor() : CSVParser<IntradayInfo> {
                 .drop(1)
                 .mapNotNull { line ->
                     val timestamp = line.getOrNull(0) ?: return@mapNotNull null
-                    val close = line.getOrNull(1) ?: return@mapNotNull null
+                    val close = line.getOrNull(4) ?: return@mapNotNull null
                     val dto = IntradayInfoDto(timestamp = timestamp, close = close.toDouble())
                     dto.toIntradayInfo()
                 }
                 .filter {
-                    it.date.dayOfMonth == LocalDate.now().minusDays(4).dayOfMonth
+                    it.date.dayOfMonth == LocalDate.now().minusDays(1).dayOfMonth
                 }
                 .sortedBy {
                     it.date.hour

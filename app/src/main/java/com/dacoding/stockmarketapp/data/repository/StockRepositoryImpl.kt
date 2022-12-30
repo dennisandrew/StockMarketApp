@@ -21,7 +21,7 @@ import javax.inject.Singleton
 @Singleton
 class StockRepositoryImpl @Inject constructor(
     private val api: StockApi,
-    private val db: StockDatabase,
+    db: StockDatabase,
     private val companyListingsParser: CSVParser<CompanyListing>,
     private val intradayInfoParser: CSVParser<IntradayInfo>
 ) : StockRepository {

@@ -3,5 +3,6 @@
 
     <style name="Theme.StockMarketApp" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:statusBarColor">@color/dark_blue</item>
+        <item name="android:windowBackground">@color/dark_blue</item>
     </style>
 </resources>
